@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9776e19b-cda8-4233-9506-38c481bf0d64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tic-tac-toe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="9776e19b-cda8-4233-9506-38c481bf0d64" name="Changes" comment="Добавлен интерфейс стратегии ИИ и реализация случайного ИИ: Создан интерфейс AIStrategy для определения поведения стратегии для ИИ и добавлена RandomAIStrategy как начальная стратегия ИИ для случайного выбора ходов.">
+      <change afterPath="$PROJECT_DIR$/src/GameModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -32,7 +45,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Alan",
+    "last_opened_file_path": "C:/Users/dtl19/OneDrive/Рабочий стол/Programming/Java/TicTacToe/TicTacToe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,11 +63,53 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731082283140</updated>
-      <workItem from="1731082284130" duration="304000" />
+      <workItem from="1731082284130" duration="5232000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1731082744469</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731082744469</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Начальная настройка классов игроков и фабрик: Создан Player как базовый класс, с подклассами HumanPlayer и AIPlayer для представления человека и ИИ. Реализован PlayerFactory с конкретными фабриками для каждого типа игроков по паттерну Фабрика.">
+      <option name="closed" value="true" />
+      <created>1731089989835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731089989835</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавлен интерфейс стратегии ИИ и реализация случайного ИИ: Создан интерфейс AIStrategy для определения поведения стратегии для ИИ и добавлена RandomAIStrategy как начальная стратегия ИИ для случайного выбора ходов.">
+      <option name="closed" value="true" />
+      <created>1731090179674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731090179674</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <MESSAGE value="Начальная настройка классов игроков и фабрик: Создан Player как базовый класс, с подклассами HumanPlayer и AIPlayer для представления человека и ИИ. Реализован PlayerFactory с конкретными фабриками для каждого типа игроков по паттерну Фабрика." />
+    <MESSAGE value="Добавлен интерфейс стратегии ИИ и реализация случайного ИИ: Создан интерфейс AIStrategy для определения поведения стратегии для ИИ и добавлена RandomAIStrategy как начальная стратегия ИИ для случайного выбора ходов." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен интерфейс стратегии ИИ и реализация случайного ИИ: Создан интерфейс AIStrategy для определения поведения стратегии для ИИ и добавлена RandomAIStrategy как начальная стратегия ИИ для случайного выбора ходов." />
   </component>
 </project>

@@ -56,4 +56,39 @@ public class GameModel {
             observer.update();
         }
     }
+
+    // Метод для проверки победителя или ничьей
+    public String checkWinner() {
+        // Проверка горизонтальных линий
+        for (int i = 0; i <= 6; i += 3) {
+            if (board[i] != null && board[i].equals(board[i + 1]) && board[i].equals(board[i + 2])) {
+                return board[i]; // Возвращаем победителя ("X" или "O")
+            }
+        }
+
+        // Проверка вертикальных линий
+        for (int i = 0; i < 3; i++) {
+            if (board[i] != null && board[i].equals(board[i + 3]) && board[i].equals(board[i + 6])) {
+                return board[i]; // Возвращаем победителя
+            }
+        }
+
+        // Проверка диагональных линий
+        if (board[0] != null && board[0].equals(board[4]) && board[0].equals(board[8])) {
+            return board[0]; // Возвращаем победителя
+        }
+        if (board[2] != null && board[2].equals(board[4]) && board[2].equals(board[6])) {
+            return board[2]; // Возвращаем победителя
+        }
+
+        // Проверка на ничью (все ячейки заполнены, но победителя нет)
+        for (String cell : board) {
+            if (cell == null) {
+                return null; // Игра продолжается
+            }
+        }
+
+        return "Draw"; // Если все ячейки заполнены и победителя нет, возвращаем "ничья"
+    }
+
 }
